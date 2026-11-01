@@ -18,17 +18,12 @@ export default function TopBar() {
           </div>
 
           <div className="top-bar-right">
-            <div className="top-bar-item emergency-tag item-emergency">
-              <span className="pulse-dot" aria-hidden="true"></span>
-              <span>Emergency Care Available</span>
-            </div>
             <div className="top-bar-item item-phone">
               <i className="fa-solid fa-phone" aria-hidden="true"></i>
               <a href={`tel:${CLINIC_CONFIG.phoneTel}`} className="clinic-phone-link">
-                {CLINIC_CONFIG.phoneDisplay}
+                <span>Call: {CLINIC_CONFIG.phoneDisplay}</span>
               </a>
             </div>
-            <span className="top-bar-demo-note" title="This is a frontend demonstration website">DEMO</span>
           </div>
         </div>
       </div>

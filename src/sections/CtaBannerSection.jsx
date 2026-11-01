@@ -6,50 +6,21 @@ export default function CtaBannerSection() {
     <section className="cta-banner-section" aria-label="Book Dental Consultation">
       <div className="container">
         <div className="cta-banner-inner">
-          <span
-            className="section-tag"
-            style={{
-              background: 'rgba(255,255,255,0.12)',
-              color: '#fff',
-              borderColor: 'rgba(255,255,255,0.25)'
-            }}
-          >
+          <span className="section-tag cta-section-tag">
             <i className="fa-solid fa-sparkles" aria-hidden="true"></i> Start Your Journey
           </span>
-          <h2 className="cta-banner-title">Ready to Give Your Smile the Care It Deserves?</h2>
+          <h2 className="cta-banner-title">Ready to Experience Modern, Gentle Dental Care?</h2>
           <p className="cta-banner-desc">
-            Take the first step toward a healthier, more confident smile. Send us an appointment request today or connect with our reception team.
+            Take the first step toward a healthier, more confident smile. Schedule an in-person consultation with our dental team in Visakhapatnam today.
           </p>
           <div className="cta-banner-btns">
-            <a
-              href="#appointment"
-              className="btn btn-primary btn-lg"
-              style={{ backgroundColor: 'var(--white)', color: 'var(--navy-900)' }}
-            >
+            <a href="#appointment" className="btn btn-cta-primary btn-lg">
               <i className="fa-regular fa-calendar-check" aria-hidden="true"></i>
-              <span>Request an Appointment</span>
+              <span>Book Appointment</span>
             </a>
-            <a
-              href={`tel:${CLINIC_CONFIG.phoneTel}`}
-              className="btn btn-lg clinic-phone-link"
-              style={{
-                backgroundColor: 'rgba(255, 255, 255, 0.18)',
-                color: '#ffffff',
-                border: '1.5px solid rgba(255, 255, 255, 0.6)',
-                fontWeight: 600
-              }}
-            >
+            <a href={`tel:${CLINIC_CONFIG.phoneTel}`} className="btn btn-cta-secondary btn-lg clinic-phone-link">
               <i className="fa-solid fa-phone" aria-hidden="true"></i>
-              <span>Call Now</span>
-            </a>
-            <a
-              href={`https://wa.me/${CLINIC_CONFIG.whatsappNumber}?text=${encodeURIComponent(CLINIC_CONFIG.whatsappMessage)}`}
-              className="btn btn-whatsapp btn-lg clinic-whatsapp-link"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <i className="fa-brands fa-whatsapp" aria-hidden="true"></i>
-              <span>WhatsApp Us Now</span>
+              <span>Call: {CLINIC_CONFIG.phoneDisplay}</span>
             </a>
           </div>
         </div>

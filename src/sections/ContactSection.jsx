@@ -19,22 +19,7 @@ export default function ContactSection() {
         <div className="contact-grid">
           {/* Contact Details Cards */}
           <div className="contact-cards-column">
-            {/* Location Card */}
-            <div className="contact-card">
-              <div className="contact-card-icon" aria-hidden="true">
-                <i className="fa-solid fa-map-location-dot"></i>
-              </div>
-              <div className="contact-card-info">
-                <h4>Clinic Address</h4>
-                <p>{CLINIC_CONFIG.address}</p>
-                <a href={CLINIC_CONFIG.googleMapsUrl} className="contact-card-action" target="_blank" rel="noopener noreferrer">
-                  <span>Open in Google Maps</span>
-                  <i className="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
-                </a>
-              </div>
-            </div>
-
-            {/* Phone & Emergency Card */}
+            {/* Phone Inquiries Card */}
             <div className="contact-card">
               <div className="contact-card-icon" aria-hidden="true">
                 <i className="fa-solid fa-phone-volume"></i>
@@ -54,15 +39,31 @@ export default function ContactSection() {
               </div>
             </div>
 
-            {/* WhatsApp & Email Card */}
+            {/* Clinic Address Card */}
+            <div className="contact-card">
+              <div className="contact-card-icon" aria-hidden="true">
+                <i className="fa-solid fa-map-location-dot"></i>
+              </div>
+              <div className="contact-card-info">
+                <h4>Clinic Address</h4>
+                <p>{CLINIC_CONFIG.address}</p>
+                <a href={CLINIC_CONFIG.googleMapsUrl} className="contact-card-action" target="_blank" rel="noopener noreferrer">
+                  <span>Get Directions</span>
+                  <i className="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+
+            {/* WhatsApp Consultation Card */}
             <div className="contact-card">
               <div className="contact-card-icon" aria-hidden="true">
                 <i className="fa-brands fa-whatsapp"></i>
               </div>
               <div className="contact-card-info">
-                <h4>WhatsApp &amp; Email</h4>
+                <h4>WhatsApp Consultation</h4>
                 <p>
-                  WhatsApp: <strong>+91 {CLINIC_CONFIG.phoneDisplay}</strong>
+                  Direct Chat:{' '}
+                  <strong>+91 {CLINIC_CONFIG.phoneDisplay}</strong>
                   <br />
                   Email:{' '}
                   <a href={`mailto:${CLINIC_CONFIG.email}`} className="clinic-email-link">
@@ -81,40 +82,75 @@ export default function ContactSection() {
               </div>
             </div>
 
-            {/* Opening Hours Card */}
+            {/* Operating Hours Card */}
             <div className="contact-card">
               <div className="contact-card-icon" aria-hidden="true">
                 <i className="fa-regular fa-clock"></i>
               </div>
               <div className="contact-card-info">
-                <h4>Working Hours</h4>
+                <h4>Clinic Hours</h4>
                 <p>
                   {CLINIC_CONFIG.hours.weekdays}
                   <br />
                   {CLINIC_CONFIG.hours.sunday}
                 </p>
-                <span className="badge-demo">Demo Schedule</span>
+                <span className="contact-hours-badge">
+                  <i className="fa-solid fa-circle-check" aria-hidden="true"></i> Appointments Available
+                </span>
               </div>
             </div>
           </div>
 
-          {/* Location Map Frame */}
+          {/* Location Map Preview (Prevents Mobile Scroll-Trap) */}
           <div className="contact-map-frame">
-            <div className="map-header-notice">
-              <span>
-                <i className="fa-solid fa-circle-info" aria-hidden="true"></i> Sample Map Location: Beach Road, Visakhapatnam
-              </span>
-              <a href={CLINIC_CONFIG.googleMapsUrl} target="_blank" rel="noopener noreferrer" style={{ color: 'var(--primary)', fontWeight: 600 }}>
-                Directions
-              </a>
-            </div>
-            <div className="map-embed-container">
-              <iframe
-                title="Lavith Dental Clinic Demo Location Map"
-                src="https://www.openstreetmap.org/export/embed.html?bbox=83.3080%2C17.7080%2C83.3320%2C17.7220&amp;layer=mapnik&amp;marker=17.7145%2C83.3200"
-                loading="lazy"
-                allowFullScreen=""
-              ></iframe>
+            <div className="contact-map-preview-card">
+              <div className="map-preview-header">
+                <div className="map-preview-badge">
+                  <i className="fa-solid fa-location-dot" aria-hidden="true"></i>
+                  <span>Visakhapatnam, Andhra Pradesh</span>
+                </div>
+                <span className="map-preview-landmark">Beach Road Coastal Studio</span>
+              </div>
+
+              <div className="map-preview-canvas">
+                <div className="map-coastal-illustration" aria-hidden="true">
+                  <div className="map-grid-lines"></div>
+                  <div className="map-coast-wave"></div>
+                  <div className="map-pin-pulse">
+                    <div className="map-pin-circle">
+                      <i className="fa-solid fa-tooth"></i>
+                    </div>
+                    <div className="map-pin-ripple"></div>
+                  </div>
+                  <div className="map-pin-label">
+                    <strong>Lavith Dental Clinic</strong>
+                    <span>Sea Breeze Heights, Suite 204</span>
+                  </div>
+                </div>
+              </div>
+
+              <div className="map-preview-footer">
+                <div className="map-preview-meta">
+                  <div className="meta-item">
+                    <i className="fa-solid fa-car" aria-hidden="true"></i>
+                    <span>Patient parking space</span>
+                  </div>
+                  <div className="meta-item">
+                    <i className="fa-solid fa-elevator" aria-hidden="true"></i>
+                    <span>Elevator access available</span>
+                  </div>
+                </div>
+
+                <a
+                  href={CLINIC_CONFIG.googleMapsUrl}
+                  className="btn btn-primary btn-block-mobile"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i className="fa-solid fa-diamond-turn-right" aria-hidden="true"></i>
+                  <span>Open in Google Maps</span>
+                </a>
+              </div>
             </div>
           </div>
         </div>

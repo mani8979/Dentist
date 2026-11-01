@@ -73,7 +73,7 @@ export default function MobileDrawer({ isOpen, onClose }) {
           <div className="nav-drawer-brand">
             <div className="logo-icon-wrap" aria-hidden="true">
               <svg className="logo-svg" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M16 4C10.5 4 7 7.5 7 13C7 18 9.5 22 11.5 28C12 29.5 13.8 29.5 14.5 27.5C15.2 24.5 15.8 22 16 22C16.2 22 16.8 24.5 17.5 27.5C18.2 29.5 20 29.5 20.5 28C22.5 22 25 18 25 13C25 7.5 21.5 4 16 4Z" fill="#0a6c74"/>
+                <path d="M16 4C10.5 4 7 7.5 7 13C7 18 9.5 22 11.5 28C12 29.5 13.8 29.5 14.5 27.5C15.2 24.5 15.8 22 16 22C16.2 22 16.8 24.5 17.5 27.5C18.2 29.5 20 29.5 20.5 28C22.5 22 25 18 25 13C25 7.5 21.5 4 16 4Z" fill="#0284c7"/>
                 <path d="M23 7C23 9 25 9 25 9C25 9 23 9 23 11C23 9 21 9 21 9C21 9 23 9 23 7Z" fill="#38bdf8"/>
                 <path d="M12 14.5C13.5 17 18.5 17 20 14.5" stroke="#ffffff" strokeWidth="1.8" strokeLinecap="round"/>
               </svg>

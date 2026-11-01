@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function AboutSection() {
   return (
-    <section className="about-section section-padding" id="about" aria-labelledby="aboutHeading">
+    <section className="about-section section-padding bg-surface-muted" id="about" aria-labelledby="aboutHeading">
       <div className="container">
         <div className="about-grid">
           {/* Visual Column */}
@@ -19,69 +19,76 @@ export default function AboutSection() {
                   e.target.src = 'https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=700&q=80';
                 }}
               />
-            </div>
-            <div className="about-experience-badge">
-              <i className="fa-solid fa-award about-exp-icon" aria-hidden="true"></i>
-              <div>
-                <p className="about-exp-title">Patient-First Dental Clinic</p>
-                <span className="about-exp-sub">Visakhapatnam, Andhra Pradesh</span>
+              <div className="about-experience-card">
+                <div className="about-exp-icon-wrap" aria-hidden="true">
+                  <i className="fa-solid fa-tooth"></i>
+                </div>
+                <div>
+                  <p className="about-exp-title">Patient-First Clinic</p>
+                  <span className="about-exp-sub">Beach Road, Pandurangapuram</span>
+                </div>
               </div>
             </div>
           </div>
 
           {/* Content Column */}
           <div className="about-content">
-            <span className="section-tag">
-              <i className="fa-regular fa-hospital" aria-hidden="true"></i>
-              About Lavith Dental Clinic
-            </span>
+            <div className="section-kicker">
+              <span className="kicker-dot" aria-hidden="true"></span>
+              <span>About Lavith Dental Clinic</span>
+            </div>
             <h2 className="section-title text-left" id="aboutHeading">
-              Dental Care That Puts You First.
+              Dental Care Centered on Your Comfort &amp; Long-Term Health.
             </h2>
             <p className="about-lead">
-              At Lavith Dental Clinic, we believe visiting the dentist should be a reassuring, empowering, and comfortable experience.
+              At Lavith Dental Clinic, we believe visiting the dentist should be an empowering, reassuring, and completely painless experience.
             </p>
             <p className="about-text">
-              Our clinic was established with a focus on comprehensive preventive oral health and conservative dentistry. We reject rushed appointments and one-size-fits-all treatments; instead, we take time to understand your lifestyle, answer questions, and design practical care roadmaps that preserve your natural teeth for a lifetime.
+              Our Visakhapatnam clinic was founded on the philosophy of conservative dentistry and patient education. We reject hurried appointments; instead, our clinicians take the time to evaluate your unique oral anatomy, explain findings clearly with digital imaging, and design treatment roadmaps focused on preserving your natural teeth.
             </p>
 
-            {/* 3 Benefit Points */}
-            <div className="about-benefits-list">
-              <div className="about-benefit-item">
-                <div className="benefit-bullet-icon" aria-hidden="true">
-                  <i className="fa-solid fa-check"></i>
+            {/* 3 Pillar Points */}
+            <div className="about-pillars-list">
+              <div className="about-pillar-item">
+                <div className="pillar-icon" aria-hidden="true">
+                  <i className="fa-solid fa-shield-halved"></i>
                 </div>
-                <div className="benefit-content">
-                  <h4>Prevention-First Philosophy</h4>
-                  <p>Proactive care and routine hygiene coaching to protect healthy enamel and stop dental issues early.</p>
-                </div>
-              </div>
-
-              <div className="about-benefit-item">
-                <div className="benefit-bullet-icon" aria-hidden="true">
-                  <i className="fa-solid fa-check"></i>
-                </div>
-                <div className="benefit-content">
-                  <h4>Gentle &amp; Personalized Consultations</h4>
-                  <p>Step-by-step treatment plans customized to your comfort, schedule, and individual dental goals.</p>
+                <div className="pillar-content">
+                  <h4>Conservative Tooth Preservation</h4>
+                  <p>Minimally invasive therapies that protect natural tooth structure and avoid unnecessary procedures.</p>
                 </div>
               </div>
 
-              <div className="about-benefit-item">
-                <div className="benefit-bullet-icon" aria-hidden="true">
-                  <i className="fa-solid fa-check"></i>
+              <div className="about-pillar-item">
+                <div className="pillar-icon" aria-hidden="true">
+                  <i className="fa-solid fa-comments"></i>
                 </div>
-                <div className="benefit-content">
-                  <h4>Patient Education &amp; Visual Clarity</h4>
-                  <p>We show you high-definition intraoral images so you are always fully informed and in charge of your decisions.</p>
+                <div className="pillar-content">
+                  <h4>Transparent, Unhurried Guidance</h4>
+                  <p>Clear explanations of your clinical options, step-by-step procedures, and expected timelines before starting.</p>
+                </div>
+              </div>
+
+              <div className="about-pillar-item">
+                <div className="pillar-icon" aria-hidden="true">
+                  <i className="fa-solid fa-couch"></i>
+                </div>
+                <div className="pillar-content">
+                  <h4>Anxiety-Free Clinical Atmosphere</h4>
+                  <p>A tranquil, clean operatory setting with gentle anesthesia protocols designed for nervous patients.</p>
                 </div>
               </div>
             </div>
 
-            <a href="#dentists" className="btn btn-secondary">
-              <span>Meet Our Team</span>
-              <i className="fa-solid fa-arrow-right" aria-hidden="true"></i>
-            </a>
+            <div className="about-action-row">
+              <a href="#dentists" className="btn btn-secondary">
+                <span>Meet Our Clinicians</span>
+                <i className="fa-solid fa-arrow-right" aria-hidden="true"></i>
+              </a>
+              <a href="#appointment" className="btn btn-outline">
+                <span>Book a Consultation</span>
+              </a>
+            </div>
           </div>
         </div>
       </div>

@@ -1,63 +1,63 @@
 import React from 'react';
+import { CLINIC_CONFIG } from '../data/clinicData';
 
 export default function HeroSection() {
   return (
     <section className="hero-section" id="hero" aria-labelledby="heroHeading">
       <div className="container">
         <div className="hero-grid">
-          {/* Left Column: Copy & CTAs */}
+          {/* Left Column: Copy & Primary Actions */}
           <div className="hero-content">
             <div className="hero-badge">
-              <i className="fa-solid fa-sparkles" aria-hidden="true"></i>
-              <span>Patient-First Dental Practice in Visakhapatnam</span>
+              <i className="fa-solid fa-tooth" aria-hidden="true"></i>
+              <span>Modern Dental Practice • Visakhapatnam</span>
             </div>
 
             <h1 className="hero-headline" id="heroHeading">
-              Confident Smiles <br />
-              <span className="highlight-teal">Start Here.</span>
+              Confident Smiles Start With <span className="highlight-blue">Gentle, Modern Care.</span>
             </h1>
 
             <p className="hero-lead">
-              Personalized dental care, modern technology, and a gentle touch to help you enjoy a healthier, brighter smile.
+              Experience personalized dental care, contemporary clinical technology, and an unhurried, gentle approach designed around your complete comfort.
             </p>
 
             <div className="hero-cta-group">
               <a href="#appointment" className="btn btn-primary btn-lg">
                 <i className="fa-regular fa-calendar-check" aria-hidden="true"></i>
-                <span>Book Your Visit</span>
+                <span>Book Appointment</span>
               </a>
-              <a href="#treatments" className="btn btn-secondary btn-lg">
-                <span>Explore Our Treatments</span>
-                <i className="fa-solid fa-arrow-right" aria-hidden="true"></i>
+              <a href={`tel:${CLINIC_CONFIG.phoneTel}`} className="btn btn-secondary btn-lg clinic-phone-link">
+                <i className="fa-solid fa-phone" aria-hidden="true"></i>
+                <span>Call: {CLINIC_CONFIG.phoneDisplay}</span>
               </a>
             </div>
 
-            {/* Trust Highlights */}
-            <div className="hero-trust-row">
+            {/* Verified Clinical Trust Highlights */}
+            <div className="hero-trust-row" aria-label="Key Clinic Standards">
               <div className="trust-highlight-item">
                 <div className="trust-icon-check" aria-hidden="true">
                   <i className="fa-solid fa-check"></i>
                 </div>
-                <span className="trust-highlight-text">Personalized Dental Care</span>
+                <span className="trust-highlight-text">Sterile Clinical Hygiene</span>
               </div>
 
               <div className="trust-highlight-item">
                 <div className="trust-icon-check" aria-hidden="true">
                   <i className="fa-solid fa-check"></i>
                 </div>
-                <span className="trust-highlight-text">Modern Treatment Approach</span>
+                <span className="trust-highlight-text">Conservative Care</span>
               </div>
 
               <div className="trust-highlight-item">
                 <div className="trust-icon-check" aria-hidden="true">
                   <i className="fa-solid fa-check"></i>
                 </div>
-                <span className="trust-highlight-text">Friendly, Experienced Team</span>
+                <span className="trust-highlight-text">Beach Road, Visakhapatnam</span>
               </div>
             </div>
           </div>
 
-          {/* Right Column: Visual Frame with Floating Cards */}
+          {/* Right Column: Clean Visual Presentation without floating card clutter */}
           <div className="hero-visual">
             <div className="hero-image-frame">
               <img
@@ -71,31 +71,14 @@ export default function HeroSection() {
                   e.target.src = 'https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=800&q=80';
                 }}
               />
-            </div>
-
-            {/* Floating Info Card 1 */}
-            <div className="floating-card-care" aria-label="Care Highlight">
-              <div className="floating-card-icon" aria-hidden="true">
-                <i className="fa-solid fa-tooth"></i>
-              </div>
-              <div>
-                <p className="floating-card-title">Care designed around your smile.</p>
-                <span className="floating-card-subtitle">Transparent, unhurried consultations</span>
-              </div>
-            </div>
-
-            {/* Floating Card 2: Patient Satisfaction Rating */}
-            <div className="floating-card-rating" aria-label="Patient Satisfaction">
-              <div className="stars-row" aria-hidden="true">
-                <i className="fa-solid fa-star"></i>
-                <i className="fa-solid fa-star"></i>
-                <i className="fa-solid fa-star"></i>
-                <i className="fa-solid fa-star"></i>
-                <i className="fa-solid fa-star"></i>
-              </div>
-              <div>
-                <span className="rating-score">4.9 / 5.0</span>{' '}
-                <span className="rating-total">(Demo Rating)</span>
+              <div className="hero-visual-card">
+                <div className="hero-visual-card-icon" aria-hidden="true">
+                  <i className="fa-solid fa-hand-holding-heart"></i>
+                </div>
+                <div>
+                  <p className="hero-visual-card-title">Unhurried &amp; Patient-First</p>
+                  <span className="hero-visual-card-sub">Care focused on your lasting comfort</span>
+                </div>
               </div>
             </div>
           </div>
