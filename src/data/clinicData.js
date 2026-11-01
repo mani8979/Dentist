@@ -1,16 +1,16 @@
 /**
- * SmileCraft Dental Studio - Centralized Clinic Data Store
- * Fictional demonstration clinic in Visakhapatnam, Andhra Pradesh
+ * Lavith Dental Clinic - Centralized Clinic Data Store
+ * Clinic in Visakhapatnam, Andhra Pradesh
  */
 
 export const CLINIC_CONFIG = {
-  clinicName: 'SmileCraft Dental Studio',
+  clinicName: 'Lavith Dental Clinic',
   tagline: 'Your Smile. Our Passion.',
-  phoneDisplay: '+91 891 234 5678',
-  phoneTel: '+918912345678',
-  whatsappNumber: '919876543210',
-  whatsappMessage: 'Hello SmileCraft Dental Studio! I would like to enquire about booking a dental appointment.',
-  email: 'contact@smilecraft-demo.in',
+  phoneDisplay: '7794075129',
+  phoneTel: '+917794075129',
+  whatsappNumber: '917794075129',
+  whatsappMessage: 'Hello Lavith Dental Clinic! I would like to enquire about booking a dental appointment.',
+  email: 'contact@lavithdentalclinic.com',
   city: 'Visakhapatnam',
   state: 'Andhra Pradesh',
   country: 'India',
@@ -62,7 +62,7 @@ export const TREATMENTS_DATA = [
     badge: 'Aesthetic Enhancement',
     iconClass: 'fa-solid fa-face-smile-beam',
     summary: 'Custom ceramic veneers, aesthetic composite bonding, and smile contouring designed to enhance symmetry while maintaining a natural look.',
-    fullDescription: 'Cosmetic dentistry at SmileCraft emphasizes harmony, function, and subtlety. We use high-grade dental ceramics and aesthetic composite bonding to correct chipped edges, gaps between teeth (diastemas), slight misalignments, or persistent discolorations.',
+    fullDescription: 'Cosmetic dentistry at Lavith Dental Clinic emphasizes harmony, function, and subtlety. We use high-grade dental ceramics and aesthetic composite bonding to correct chipped edges, gaps between teeth (diastemas), slight misalignments, or persistent discolorations.',
     steps: [
       'Detailed digital photography and smile proportion analysis',
       'Minimally invasive preparation with maximum natural enamel preservation',
@@ -247,7 +247,7 @@ export const TESTIMONIALS_DATA = [
     name: 'Sneha V.',
     meta: 'Visakhapatnam • Routine Cleaning & Prevention (Demo)',
     avatar: '/assets/images/patient-1.jpg',
-    quote: 'I had avoided visiting the dentist for nearly four years due to anxiety. From the moment I walked into SmileCraft, the staff was patient and warm. The cleaning was completely gentle, and Dr. Aarav explained each step beforehand. I finally feel confident keeping regular checkups!',
+    quote: 'I had avoided visiting the dentist for nearly four years due to anxiety. From the moment I walked into Lavith Dental Clinic, the staff was patient and warm. The cleaning was completely gentle, and Dr. Aarav explained each step beforehand. I finally feel confident keeping regular checkups!',
     rating: 5
   },
   {
@@ -272,7 +272,7 @@ export const FAQ_DATA = [
   {
     id: 'faq-1',
     question: 'How do I book a dental appointment?',
-    answer: 'You can easily request a consultation using the online booking form on this website, calling our front desk at +91 891 234 5678, or sending a message on WhatsApp. Our reception team will coordinate with you to confirm a mutually convenient date and time.'
+    answer: 'You can easily request a consultation using the online booking form on this website, calling our front desk at 7794075129, or sending a message on WhatsApp. Our reception team will coordinate with you to confirm a mutually convenient date and time.'
   },
   {
     id: 'faq-2',
@@ -297,6 +297,6 @@ export const FAQ_DATA = [
   {
     id: 'faq-6',
     question: 'What should I do if I have urgent dental pain?',
-    answer: 'If you experience severe toothache, dental trauma, swelling, or a broken tooth, please call our clinic phone line immediately at +91 891 234 5678. We reserve dedicated emergency triage slots during clinic hours to relieve acute pain as quickly as possible.'
+    answer: 'If you experience severe toothache, dental trauma, swelling, or a broken tooth, please call our clinic phone line immediately at 7794075129. We reserve dedicated emergency triage slots during clinic hours to relieve acute pain as quickly as possible.'
   }
 ];

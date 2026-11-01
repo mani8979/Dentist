@@ -62,7 +62,7 @@ export default function HeroSection() {
             <div className="hero-image-frame">
               <img
                 src="/assets/images/hero-dental.jpg"
-                alt="Friendly dentist in clinical attire discussing oral care with a patient at SmileCraft Dental Studio"
+                alt="Friendly dentist in clinical attire discussing oral care with a patient at Lavith Dental Clinic"
                 className="hero-img"
                 width="800"
                 height="680"

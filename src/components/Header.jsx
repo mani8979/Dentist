@@ -28,7 +28,7 @@ export default function Header({ isMobileMenuOpen, setIsMobileMenuOpen }) {
     <nav className={`site-header ${isScrolled ? 'is-scrolled' : ''}`} id="mainHeader" aria-label="Main Navigation">
       <div className="container header-inner">
         {/* Clinic Logo */}
-        <a href="#top" className="brand-logo" aria-label="SmileCraft Dental Studio Home">
+        <a href="#top" className="brand-logo" aria-label="Lavith Dental Clinic Home">
           <div className="logo-icon-wrap" aria-hidden="true">
             <svg className="logo-svg" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M16 4C10.5 4 7 7.5 7 13C7 18 9.5 22 11.5 28C12 29.5 13.8 29.5 14.5 27.5C15.2 24.5 15.8 22 16 22C16.2 22 16.8 24.5 17.5 27.5C18.2 29.5 20 29.5 20.5 28C22.5 22 25 18 25 13C25 7.5 21.5 4 16 4Z" fill="#0a6c74"/>
@@ -37,8 +37,8 @@ export default function Header({ isMobileMenuOpen, setIsMobileMenuOpen }) {
             </svg>
           </div>
           <div className="logo-text-group">
-            <span className="logo-title">Smile<span>Craft</span></span>
-            <span className="logo-tagline">Dental Studio</span>
+            <span className="logo-title">Lavith</span>
+            <span className="logo-tagline">Dental Clinic</span>
           </div>
         </a>
 

@@ -70,7 +70,7 @@ export default function TestimonialsSection() {
                 <div className="testimonial-author-info">
                   <img
                     src={currentTestimonial.avatar}
-                    alt={`${currentTestimonial.name}, patient at SmileCraft`}
+                    alt={`${currentTestimonial.name}, patient at Lavith Dental Clinic`}
                     className="testimonial-avatar"
                     width="60"
                     height="60"

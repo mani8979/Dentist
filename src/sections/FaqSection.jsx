@@ -18,7 +18,7 @@ export default function FaqSection() {
           </span>
           <h2 className="section-title" id="faqHeading">Frequently Asked Questions</h2>
           <p className="section-subtitle">
-            Find answers to common questions about dental visits, treatments, and appointments at SmileCraft.
+            Find answers to common questions about dental visits, treatments, and appointments at Lavith Dental Clinic.
           </p>
         </div>
 

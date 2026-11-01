@@ -10,7 +10,7 @@ export default function ContactSection() {
             <i className="fa-solid fa-location-dot" aria-hidden="true"></i>
             Visit Our Clinic
           </span>
-          <h2 className="section-title" id="contactHeading">Get in Touch with SmileCraft</h2>
+          <h2 className="section-title" id="contactHeading">Get in Touch with Lavith Dental Clinic</h2>
           <p className="section-subtitle">
             Conveniently situated along the scenic Beach Road in Visakhapatnam, Andhra Pradesh.
           </p>
@@ -45,11 +45,10 @@ export default function ContactSection() {
                   Reception Desk:{' '}
                   <a href={`tel:${CLINIC_CONFIG.phoneTel}`} className="clinic-phone-link">
                     <strong>{CLINIC_CONFIG.phoneDisplay}</strong>
-                  </a>{' '}
-                  (Demo)
+                  </a>
                 </p>
                 <a href={`tel:${CLINIC_CONFIG.phoneTel}`} className="contact-card-action clinic-phone-link">
-                  <span>Call Reception Now</span>
+                  <span>Call Now</span>
                   <i className="fa-solid fa-phone" aria-hidden="true"></i>
                 </a>
               </div>
@@ -63,7 +62,7 @@ export default function ContactSection() {
               <div className="contact-card-info">
                 <h4>WhatsApp &amp; Email</h4>
                 <p>
-                  WhatsApp: <strong>+91 98765 43210</strong> (Demo)
+                  WhatsApp: <strong>+91 {CLINIC_CONFIG.phoneDisplay}</strong>
                   <br />
                   Email:{' '}
                   <a href={`mailto:${CLINIC_CONFIG.email}`} className="clinic-email-link">
@@ -111,7 +110,7 @@ export default function ContactSection() {
             </div>
             <div className="map-embed-container">
               <iframe
-                title="SmileCraft Dental Studio Demo Location Map"
+                title="Lavith Dental Clinic Demo Location Map"
                 src="https://www.openstreetmap.org/export/embed.html?bbox=83.3080%2C17.7080%2C83.3320%2C17.7220&amp;layer=mapnik&amp;marker=17.7145%2C83.3200"
                 loading="lazy"
                 allowFullScreen=""

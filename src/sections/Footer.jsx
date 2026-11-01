@@ -10,7 +10,7 @@ export default function Footer({ onOpenPrivacy }) {
         <div className="footer-grid">
           {/* Col 1: Brand & Tagline */}
           <div className="footer-brand-column">
-            <a href="#top" className="brand-logo" aria-label="SmileCraft Dental Studio Home">
+            <a href="#top" className="brand-logo" aria-label="Lavith Dental Clinic Home">
               <div className="logo-icon-wrap" aria-hidden="true" style={{ background: 'rgba(255,255,255,0.1)' }}>
                 <svg className="logo-svg" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M16 4C10.5 4 7 7.5 7 13C7 18 9.5 22 11.5 28C12 29.5 13.8 29.5 14.5 27.5C15.2 24.5 15.8 22 16 22C16.2 22 16.8 24.5 17.5 27.5C18.2 29.5 20 29.5 20.5 28C22.5 22 25 18 25 13C25 7.5 21.5 4 16 4Z" fill="#38bdf8"/>
@@ -19,8 +19,8 @@ export default function Footer({ onOpenPrivacy }) {
                 </svg>
               </div>
               <div className="logo-text-group">
-                <span className="logo-title">Smile<span>Craft</span></span>
-                <span className="logo-tagline" style={{ color: 'var(--gray-400)' }}>Dental Studio</span>
+                <span className="logo-title">Lavith</span>
+                <span className="logo-tagline" style={{ color: 'var(--gray-400)' }}>Dental Clinic</span>
               </div>
             </a>
             <p className="footer-brand-desc">
@@ -85,7 +85,7 @@ export default function Footer({ onOpenPrivacy }) {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  +91 98765 43210 (WhatsApp)
+                  +91 {CLINIC_CONFIG.phoneDisplay} (WhatsApp)
                 </a>
               </div>
               <div className="footer-contact-item">
@@ -109,7 +109,7 @@ export default function Footer({ onOpenPrivacy }) {
         {/* Footer Bottom Bar */}
         <div className="footer-bottom">
           <div className="footer-copyright">
-            &copy; {currentYear} SmileCraft Dental Studio. All rights reserved.
+            &copy; {currentYear} Lavith Dental Clinic. All rights reserved.
             <span style={{ display: 'block', fontSize: '0.76rem', color: 'var(--gray-500)', marginTop: '0.2rem' }}>
               Portfolio Demonstration Website • Built with React &amp; Modern CSS.
             </span>

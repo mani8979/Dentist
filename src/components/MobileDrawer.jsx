@@ -78,7 +78,10 @@ export default function MobileDrawer({ isOpen, onClose }) {
                 <path d="M12 14.5C13.5 17 18.5 17 20 14.5" stroke="#ffffff" strokeWidth="1.8" strokeLinecap="round"/>
               </svg>
             </div>
-            <span className="nav-drawer-title">Smile<span>Craft</span></span>
+            <div className="logo-text-group">
+              <span className="nav-drawer-title">Lavith</span>
+              <span className="logo-tagline">Dental Clinic</span>
+            </div>
           </div>
 
           <button
@@ -122,7 +125,7 @@ export default function MobileDrawer({ isOpen, onClose }) {
           <div className="drawer-contact-mini">
             <a href={`tel:${CLINIC_CONFIG.phoneTel}`} className="clinic-phone-link">
               <i className="fa-solid fa-phone" aria-hidden="true"></i>
-              <span>{CLINIC_CONFIG.phoneDisplay}</span>
+              <span>Call: {CLINIC_CONFIG.phoneDisplay}</span>
             </a>
             <a
               href={`https://wa.me/${CLINIC_CONFIG.whatsappNumber}?text=${encodeURIComponent(CLINIC_CONFIG.whatsappMessage)}`}

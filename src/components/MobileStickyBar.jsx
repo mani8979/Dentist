@@ -7,7 +7,7 @@ export default function MobileStickyBar() {
       <div className="mobile-sticky-inner">
         <a href={`tel:${CLINIC_CONFIG.phoneTel}`} className="btn btn-secondary btn-sm clinic-phone-link">
           <i className="fa-solid fa-phone" aria-hidden="true"></i>
-          <span>Call Clinic</span>
+          <span>Call Now</span>
         </a>
         <a href="#appointment" className="btn btn-primary btn-sm">
           <i className="fa-regular fa-calendar-check" aria-hidden="true"></i>

@@ -1,4 +1,4 @@
-# SmileCraft Dental Studio — Modern React Dental Clinic Website
+# Lavith Dental Clinic — Modern React Dental Clinic Website
 
 A complete, high-performance, fully responsive dental clinic website engineered with **React 18**, **Vite**, and modern responsive CSS.
 
@@ -9,7 +9,8 @@ Designed and architected as a client-ready showcase project that developers and 
 ## 🌟 Visual & Technical Highlights
 
 - **Framework**: React 18 + Vite
-- **Brand Identity**: *SmileCraft Dental Studio* — "Your Smile. Our Passion."
+- **Brand Identity**: *Lavith Dental Clinic* — "Your Smile. Our Passion."
+- **Contact Number**: `7794075129` (`tel:+917794075129`)
 - **Location**: Beach Road, Visakhapatnam, Andhra Pradesh, India *(fictional sample clinic location)*.
 - **Design Aesthetic**: Clean medical white backgrounds, deep teal primary (`#0a6c74`), soft aqua & mint secondary tones, dark navy headings, generous whitespace, subtle elevation shadows, and rounded cards.
 - **Responsive Architecture**: Zero horizontal scrolling across all viewports (tested from 320px to 1920px).

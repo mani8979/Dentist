@@ -10,7 +10,7 @@ export default function AboutSection() {
             <div className="about-image-frame">
               <img
                 src="/assets/images/about-clinic.jpg"
-                alt="Modern, pristine clinical treatment room and ergonomic dental chair at SmileCraft Dental Studio"
+                alt="Modern, pristine clinical treatment room and ergonomic dental chair at Lavith Dental Clinic"
                 className="about-img"
                 width="700"
                 height="620"
@@ -23,7 +23,7 @@ export default function AboutSection() {
             <div className="about-experience-badge">
               <i className="fa-solid fa-award about-exp-icon" aria-hidden="true"></i>
               <div>
-                <p className="about-exp-title">Patient-First Dental Studio</p>
+                <p className="about-exp-title">Patient-First Dental Clinic</p>
                 <span className="about-exp-sub">Visakhapatnam, Andhra Pradesh</span>
               </div>
             </div>
@@ -33,13 +33,13 @@ export default function AboutSection() {
           <div className="about-content">
             <span className="section-tag">
               <i className="fa-regular fa-hospital" aria-hidden="true"></i>
-              About SmileCraft
+              About Lavith Dental Clinic
             </span>
             <h2 className="section-title text-left" id="aboutHeading">
               Dental Care That Puts You First.
             </h2>
             <p className="about-lead">
-              At SmileCraft Dental Studio, we believe visiting the dentist should be a reassuring, empowering, and comfortable experience.
+              At Lavith Dental Clinic, we believe visiting the dentist should be a reassuring, empowering, and comfortable experience.
             </p>
             <p className="about-text">
               Our clinic was established with a focus on comprehensive preventive oral health and conservative dentistry. We reject rushed appointments and one-size-fits-all treatments; instead, we take time to understand your lifestyle, answer questions, and design practical care roadmaps that preserve your natural teeth for a lifetime.

@@ -30,6 +30,19 @@ export default function CtaBannerSection() {
               <span>Request an Appointment</span>
             </a>
             <a
+              href={`tel:${CLINIC_CONFIG.phoneTel}`}
+              className="btn btn-lg clinic-phone-link"
+              style={{
+                backgroundColor: 'rgba(255, 255, 255, 0.18)',
+                color: '#ffffff',
+                border: '1.5px solid rgba(255, 255, 255, 0.6)',
+                fontWeight: 600
+              }}
+            >
+              <i className="fa-solid fa-phone" aria-hidden="true"></i>
+              <span>Call Now</span>
+            </a>
+            <a
               href={`https://wa.me/${CLINIC_CONFIG.whatsappNumber}?text=${encodeURIComponent(CLINIC_CONFIG.whatsappMessage)}`}
               className="btn btn-whatsapp btn-lg clinic-whatsapp-link"
               target="_blank"

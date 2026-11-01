@@ -10,7 +10,7 @@ export default function WhyChooseUsSection() {
           <div className="why-content">
             <span className="section-tag">
               <i className="fa-solid fa-thumbs-up" aria-hidden="true"></i>
-              Why SmileCraft
+              Why Lavith Dental Clinic
             </span>
             <h2 className="section-title text-left" id="whyHeading">
               Thoughtful Dental Care Designed for Your Comfort
@@ -37,7 +37,7 @@ export default function WhyChooseUsSection() {
             <div className="why-image-frame">
               <img
                 src="/assets/images/why-choose-us.jpg"
-                alt="Dentist discussing dental checkup results with a smiling patient at SmileCraft clinic"
+                alt="Dentist discussing dental checkup results with a smiling patient at Lavith Dental Clinic"
                 className="why-img"
                 width="700"
                 height="660"
